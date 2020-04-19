@@ -1,7 +1,7 @@
 <% content_for :title do %>Contact<% end %>
 <h3>Contact</h3>
 <div class="form">
-  <%= form_with(url: contact_path) do |form| %>
+  <%= form_with(model: @contact) do |form| %>
     <%= form.label :name %>
     <%= form.text_field :name, autofocus: true %>
     <br/>

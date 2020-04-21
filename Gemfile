@@ -61,10 +61,16 @@ gem 'bootstrap-sass'
 gem 'gibbon'
 gem 'high_voltage'
 gem 'jquery-rails'
+
 group :development do
   gem 'better_errors'
   gem 'rails_layout'
 end
+
+group :test do
+  gem 'minitest-spec-rails'
+end
+
 group :production do
   gem 'pg'
 end
